@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    padding-top: 20px;
+    display: grid;
+    justify-items: center;
+}
