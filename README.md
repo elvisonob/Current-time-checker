@@ -12,7 +12,7 @@ Clone the forked repository onto your local machine
 <br>
 In the root directory, type npm install, which installs dependencies for the project
 <br>
-Finally, type npm run start, which starts a development server that runs your website in the browser
+Finally, type npm run start, which starts a development server that runs the webpage in your browser
 
 <h1>Project Usage</h1>
 Users can easily navigate between the three cities listed in the application to view their current time
