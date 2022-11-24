@@ -6,7 +6,7 @@
 }
 
 .header {
-    background-color: peachpuff;
+    background-color: #044599;
 }
 
 .header .logo,
@@ -30,7 +30,7 @@
 
 .header nav {
     display: grid;
-    grid-template-rows: 20px 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
     align-content: center;
     justify-content: right;
 }
@@ -38,7 +38,7 @@
 .header,
 ul,
 li {
-    margin-right: 30px;
+    margin-right: 40px;
     align-items: center;
 }
 
@@ -48,10 +48,8 @@ li {
 }
 
 .header li {
-    background-color: blue;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px 20px;
+    margin: 0 1rem;
+    width: 1rem;
 }
 
 .header,
@@ -61,6 +59,10 @@ li {
 
 .header a.active {
     color: #95bcf0;
-    padding-bottom: 0.8rem;
-    border-bottom: 4px solid #95bcf0;
+    padding: 0.25rem;
+    border-bottom: 3px solid #95bcf0;
+}
+
+.header .logo {
+    color: wheat;
 }

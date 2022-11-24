@@ -5,6 +5,7 @@ import './London.css';
 const London = () => {
   const [time, setTime] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetchLondonTime();
@@ -12,21 +13,29 @@ const London = () => {
 
   const fetchLondonTime = async () => {
     setIsLoading(true);
-    const response = await fetch(
-      'http://worldtimeapi.org/api/timezone/Europe/London'
-    );
+    setError(null);
+    try {
+      const response = await fetch(
+        'http://worldtimeapi.org/api/timezone/Europe/London'
+      );
 
-    const data = await response.json();
-    const t = data.datetime.split('');
-    const updatedTime = `${t[11]}${t[12]}:${t[14]}${t[15]}:${t[17]}${t[18]}`;
-    const splittedTime = updatedTime.split(':');
-    const aMorPm = splittedTime[0] >= 12 ? 'PM' : 'AM';
-    const hours = splittedTime[0] % 12 || 12;
-    const finalTime = `${hours}:${splittedTime[1]}:${splittedTime[2]} ${aMorPm}`;
+      if (!response.ok) {
+        throw new Error('Something went wrong!');
+      }
 
-    console.log(finalTime);
-    setTime(finalTime);
-    console.log(data);
+      const data = await response.json();
+      const t = data.datetime.split('');
+      const updatedTime = `${t[11]}${t[12]}:${t[14]}${t[15]}:${t[17]}${t[18]}`;
+      const splittedTime = updatedTime.split(':');
+      const aMorPm = splittedTime[0] >= 12 ? 'PM' : 'AM';
+      const hours = splittedTime[0] % 12 || 12;
+      const finalTime = `${
+        hours.toString().length === 1 ? `0${hours}` : hours
+      }:${splittedTime[1]}:${splittedTime[2]} ${aMorPm}`;
+      setTime(finalTime);
+    } catch (error) {
+      setError(error.message);
+    }
     setIsLoading(false);
   };
 
@@ -34,9 +43,10 @@ const London = () => {
     <div className="timesetting">
       <Header />
       {isLoading && <p>Loading...</p>}
+      {!isLoading && error && <p style={{ color: 'red' }}>{error}</p>}
       {!isLoading && <h1>{time}</h1>}
       <button className="updatetime" onClick={fetchLondonTime}>
-        Current Time
+        Refresh
       </button>
     </div>
   );

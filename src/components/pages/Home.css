@@ -14,7 +14,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-li {
+.homepage li {
     padding-top: 20px;
     list-style: none;
     border: 2px solid purple;
