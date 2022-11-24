@@ -4,8 +4,8 @@ import './Home.css';
 
 const Home = () => {
   return (
-    <div className="homePage">
-      <h1>Real life Time checker</h1>
+    <div className="homepage">
+      <h1>Life Time checker</h1>
       <nav>
         <ul>
           <Link style={{ textDecoration: 'none' }} to="/london">

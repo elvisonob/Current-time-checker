@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Header from './Header';
 
 const Rome = () => {
   const [time, setTime] = useState(null);
@@ -19,10 +20,13 @@ const Rome = () => {
   };
 
   return (
-    <div>
+    <div className="timesetting">
+      <Header />
       {isLoading && <p>Loading...</p>}
       {!isLoading && <h1>{time}</h1>}
-      <button onClick={fetchRomeTime}>Current Time</button>
+      <button className="updatetime" onClick={fetchRomeTime}>
+        Current Time
+      </button>
     </div>
   );
 };

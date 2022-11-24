@@ -4,13 +4,22 @@
     box-sizing: border-box;
 }
 
-h1 {
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    padding-top: 20px;
+.homepage {
+    padding-top: 40px;
     display: grid;
     justify-items: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+li {
+    padding-top: 20px;
+    list-style: none;
+    border: 2px solid purple;
+    margin: 5px;
+    padding: 5px 20px;
+    background-color: purple;
+    color: white;
 }

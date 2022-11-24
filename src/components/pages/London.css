@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.timesetting {}
+
+.timesetting,
+.updatetime {
+    margin-top: 20px;
+    display: grid;
+    justify-items: center;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    font-weight: large;
+    cursor: pointer;
+}

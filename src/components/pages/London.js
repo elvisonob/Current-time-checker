@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import Header from './Header';
+import './London.css';
 
 const London = () => {
   const [time, setTime] = useState(null);
@@ -30,6 +32,7 @@ const London = () => {
 
   return (
     <div className="timesetting">
+      <Header />
       {isLoading && <p>Loading...</p>}
       {!isLoading && <h1>{time}</h1>}
       <button className="updatetime" onClick={fetchLondonTime}>

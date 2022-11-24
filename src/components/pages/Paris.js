@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Header from './Header';
 
 const Paris = () => {
   const [time, setTime] = useState(null);
@@ -28,10 +29,13 @@ const Paris = () => {
   };
 
   return (
-    <div>
+    <div className="timesetting">
+      <Header />
       {isLoading && <p>Loading...</p>}
       {!isLoading && <h1>{time}</h1>}
-      <button onClick={fetchParisTime}>Current Time</button>
+      <button className="updatetime" onClick={fetchParisTime}>
+        Current Time
+      </button>
     </div>
   );
 };
