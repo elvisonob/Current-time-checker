@@ -16,4 +16,3 @@ Finally, type npm run start, which starts a development server that runs the web
 
 <h1>Project Usage</h1>
 Users can easily navigate between the three cities listed in the application to view their current time
-
