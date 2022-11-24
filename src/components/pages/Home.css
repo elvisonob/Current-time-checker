@@ -4,13 +4,33 @@
     box-sizing: border-box;
 }
 
+.body {
+    background-color: grey;
+    height: 100vh;
+}
+
 .homepage {
     padding-top: 40px;
     display: grid;
     justify-items: center;
 }
 
-h1 {
+.subhomepage {
+    background-color: white;
+    height: 500px;
+    width: 360px;
+    border-radius: 10px;
+    display: grid;
+    align-content: center;
+    padding: 20px;
+}
+
+.subhomepage li {
+    display: grid;
+    justify-items: center;
+}
+
+h2 {
     margin-bottom: 10px;
 }
 

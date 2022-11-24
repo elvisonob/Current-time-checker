@@ -7,6 +7,7 @@ const Header = () => {
   const navigation = () => {
     history.push('/');
   };
+
   return (
     <div>
       <div className="header">
