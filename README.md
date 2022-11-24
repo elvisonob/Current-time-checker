@@ -1,12 +1,16 @@
-Project Title 
+<h1>Project Title</h1>
 Current Time Check for London, Paris, and Rome
 
-Project Description
-This Application shows the current time of three major cities in Europe in real time which was fetched from an external API, I used React;create-react-app to implement the project.
+<h1>Project Description</h1>
+This Application shows the current time of three major cities in Europe. The information is fetched from http://worldtimeapi.org/ API. 
+I used create-react-app to execute the project.
 
-How to install and Run the Project
-The project can be cloned locally, and then, in the terminal, kindly run 'npm install' so as to install the dependencies, and afterwards, kindly run 'npm start'
+<h1>Setup</h1>
+Repository can be forked
+Clone the forked repository onto your local machine
+In the root directory, type npm install, which installs dependencies for the project
+Finally, type npm run start, which starts a development server that runs your website in the browser
 
-How to use Project
+<h1>Project Usage</h1>
 Users can easily navigate between the three cities listed in the application to view their current time
 
