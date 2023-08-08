@@ -10,7 +10,7 @@ const London = () => {
     error,
     sendRequest: fetchTasks,
   } = useCityTime({
-    url: 'http://worldtimeapi.org/api/timezone/Europe/London',
+    url: 'https://worldtimeapi.org/api/timezone/Europe/London',
   });
 
   useEffect(() => {

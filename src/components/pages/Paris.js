@@ -9,7 +9,7 @@ const Paris = () => {
     error,
     sendRequest: fetchTasks,
   } = useCityTime({
-    url: 'http://worldtimeapi.org/api/timezone/Europe/Paris',
+    url: 'https://worldtimeapi.org/api/timezone/Europe/Paris',
   });
 
   useEffect(() => {

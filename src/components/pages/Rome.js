@@ -9,7 +9,7 @@ const Rome = () => {
     error,
     sendRequest: fetchTasks,
   } = useCityTime({
-    url: 'http://worldtimeapi.org/api/timezone/Europe/Rome',
+    url: 'https://worldtimeapi.org/api/timezone/Europe/Rome',
   });
 
   useEffect(() => {
