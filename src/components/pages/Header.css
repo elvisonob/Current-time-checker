@@ -66,3 +66,15 @@ li {
 .header .logo {
     color: wheat;
 }
+
+@media screen and (max-width: 450px) {
+    .header,
+    nav,
+    ul,
+    li {
+        font-size: small;
+        text-decoration: none;
+        display: inline-block;
+        margin-right: auto;
+    }
+}

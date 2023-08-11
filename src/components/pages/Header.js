@@ -35,7 +35,7 @@ const Header = () => {
               activeClassName="active"
               to="/rome"
             >
-              <li>Rome Timesss</li>
+              <li>Rome Time</li>
             </NavLink>
           </ul>
         </nav>
