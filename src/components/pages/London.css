@@ -19,3 +19,11 @@ button {
     font-weight: large;
     cursor: pointer;
 }
+
+body {
+    background-color: grey;
+}
+
+.time-display {
+    font-size: 50px;
+}

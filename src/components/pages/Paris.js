@@ -21,7 +21,7 @@ const Paris = () => {
       <Header />
       {isLoading && <p>Loading...</p>}
       {!isLoading && error && <p style={{ color: 'red' }}>{error}</p>}
-      {!isLoading && <h1>{time}</h1>}
+      {!isLoading && <h1 className="time-display">{time}</h1>}
       <button className="updatetime" onClick={fetchTasks}>
         Refresh
       </button>
